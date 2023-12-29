@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+    - Meta tags
+  -->
+  <title>Order Now</title>
+  <meta name="title" content="Glasses.3D">
+  <meta name="description" content="Order page">
+  <meta name="author" content="Kristian Rendic">
+
+  <!-- 
+    - google font 
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/order.css">
+  
+  
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/order/background.jpg">
+
+</head>
+<body>
+
+    <!-- 
+    - HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/index/logo-white.svg" width="200" height="24" alt="Glasses.3D" class="logo-light">
+
+        <img src="./assets/images/index/logo-black.svg" width="200" height="24" alt="Glasses.3D" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/index/logo-white.svg" width="200" height="24" alt="Glasses.3D">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="./about_us.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="./projects.html" class="navbar-link">CNC</a>
+          </li>
+
+          <li>
+            <a href="./projects.html" class="navbar-link">CAD Projects</a>
+          </li>
+
+          <li>
+            <a href="./contact.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+
+          <a href="#" class="contact-link " id="order-btn">Order</a>
+          <br>
+
+          <a href="mailto:kristian1912@email.com" class="order-link">kristian1912@email.com</a>
+          <br>
+
+          <a href="tel:+381653021912" class="order-link">+381 65 302 1912</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/kristian-rendic/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/_zisti02_/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn btn-primary">Order</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+        <!--
+            - HERO
+        -->
+
+        <section class="section-main">
+            <h1>Order Now</h1>
+        </section>
+    
+
+        <!--
+             Order
+         -->
+
+        <div class="order" id="order">
+			<h1>Order Now</h1>
+
+			<p>If you want to get a quote and Design for Manufacturing feedback quickly, please submit your information through the form bellow</p>
+
+			<div class="border"></div>
+
+			<form onsubmit="sendEmail(); reset(); return false;" method="POST" class="order-form">
+
+				<input type="text" class="order-form-text" id="name" placeholder="Name" required>
+
+				<input type="email" class="order-form-text" placeholder="Business Email" id="email" required>
+
+				<input type="text" class="order-form-text" placeholder="Company Name" id="company_name">
+
+                <input type="number" class="order-form-text" placeholder="Order Quantity" id="order_quantity" required>
+
+                <input type="text" class="order-form-text" placeholder="Materials" id="materials">
+
+                <input type="tel" class="order-form-text" placeholder="Phone Number" id="phone_Number" required>
+
+				<textarea name="message" class="order-form-text" placeholder="Message" id="message" cols="30" rows="10" required></textarea>
+
+                <br>
+                <p>Upload 3D Design FIle</p>
+
+                <input type="file" class="order-form-text" name="file" multiple>
+
+				<input type="submit" class="order-form-btn" value="Order">
+			</form>
+
+            <br>
+            <br>
+
+            <p>*All uploads are secure and confidential, check our <a href="#" class="footer-link" onclick="openPopup()">Terms of Service</a>. You can also text us at <a href="mailto:kristian1912@email.com" class="footer-link">kristian1912@email.com</a> to get more informations.</p>
+		</div>
+
+    </article>
+  </main>
+    
+
+  <!-- 
+    - FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/index/logo-white.svg" width="100" height="24" alt="Glasses.3d">
+        </a>
+
+        <p class="footer-text">
+          &copy; 2023 Glasses.3D. <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/kristian-rendic/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/_zisti02_/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Kraljice Marije 16, Palilula-Belgrade 11000, Serbia
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:kristian1912@email.com" class="footer-link">kristian1912@email.com</a>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">+381 65 302 1912</a>
+        </li>
+
+        <br>
+
+        <li>
+          <p>Opening Time:</p>
+          <p>Mon-Fri: 9am to 18pm</p>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="./about_us.html" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="./cnc.html" class="footer-link">CNC</a>
+        </li>
+
+        <li>
+          <a href="./projects.html" class="footer-link">CAD Projects</a>
+        </li>
+
+        <li>
+          <a href="./order.html" class="footer-link">Contact Us</a>
+        </li>
+
+        <div class="containerPopup">
+          <li>
+            <a href="#" class="footer-link" onclick="openPopup()">Terms of Service</a>
+          </li>
+
+          <!--
+            - Popup Terms of Service
+          -->
+
+          <div class="popup" id="popup">
+            <div class="terms-text">
+              <h2>Terms of Service</h2>
+
+              <p>Last Updated: 16.5.2023</p>
+              <br>
+
+              <p>Greetings Customers,</p>
+              <br>
+
+              <p> Please read these Terms of Service carefully before using services operated by <b>Glasses.3D</b>.</p>
+              <br>
+
+              <ol type="1">
+
+                <li>1. <b>Acceptance of Terms</b>
+                  <p>By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the Terms, you may not access the Service.</p>
+                </li>
+
+                <li>2. <b>Description of Service</b>
+                  <p>By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the Terms, you may not access the Service.</p>
+                </li>
+
+                <li>3. <b>User Accounts</b>
+                  <p>To access certain features of the Service, you may be required to create a user account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to provide accurate, current, and complete kristian1912rmation during the registration process. You must be at least [minimum age] years old to create an account.</p>
+                </li>
+
+                <li>4. <b>User Responsibilities</b>
+                  <p>You agree to use the Service in compliance with all applicable laws and regulations. You will not engage in any activity that interferes with or disrupts the Service or its servers. You are solely responsible for any content you post, transmit, or otherwise make available through the Service, and you agree not to upload, distribute, or otherwise publish any content that is unlawful, harmful, defamatory, obscene, or infringing on intellectual property rights.</p>
+                </li>
+
+                <li>5. <b>Intellectual Property</b>
+                  <p>The Service and its original content (excluding user-generated content) remain the property of <b>Glasses.3D</b> and are protected by intellectual property laws. You may not use, reproduce, modify, or distribute the content without our prior written consent.</p>
+                </li>
+
+                <li>6. <b>Privacy</b>
+                  <p>Your privacy is important to us. Our Privacy Policy explains how we collect, use, and disclose kristian1912rmation from users. By using the Service, you consent to the collection and use of your kristian1912rmation as described in our Privacy Policy.</p>
+                </li>
+
+                <li>7. <b>Third-Party Links</b>
+                  <p>The Service may contain links to third-party websites or services that are not owned or controlled by us. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that we shall not be liable for any damage or loss caused by your use of any third-party websites or services.</p>
+                </li>
+
+                <li>8. <b>Termination</b>
+                  <p>We may terminate or suspend your access to the Service without prior notice or liability for any reason, including, but not limited to, a breach of these Terms. All provisions of the Terms that by their nature should survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability, shall continue to apply.</p>
+                </li>
+
+                <li>9. <b>Disclaimer of Warranty</b>
+                  <p>The Service is provided on an "as-is" and "as available" basis, without any warranty, whether express, implied, or statutory. We do not warrant that the Service will be uninterrupted, timely, secure, or error-free, nor do we make any warranty regarding the quality, accuracy, or reliability of any content obtained through the Service.</p>
+                </li>
+
+                <li>10. <b>Limitation of Liability</b>
+                  <p>To the extent permitted by applicable law, in no event shall <b>Glasses.3D</b>, its directors, employees, partners, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including, without limitation, loss of profits, data, or goodwill, arising out of or in connection with your use of the Service.</p>
+                </li>
+
+                <li>11. <b>Governing Law and Jurisdiction</b>
+                  <p>These Terms shall be governed by and construed in accordance with the laws of [jurisdiction]. Any dispute
+                  arising out of or relating to these Terms or the Service shall be subject to the exclusive jurisdiction of the courts located in <b>Belgrade, Serbia</b>.</p>
+                </li>
+
+                <li>12. <b>Changes to Terms of Service</b>
+                  <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. The most current version of the Terms will be posted on the Service. By continuing to access or use the Service after any revisions become effective, you agree to be bound by the revised Terms.</p>
+                </li>
+
+                <li>13. <b>Contact Us</b>
+                  <p>If you have any questions about these Terms, please order us at <a href="mailto:kristian1912@email.com" class="order-link">kristian1912@email.com</a></p>
+                </li>
+
+              </ol>
+            </div>
+
+            <h4>I Agree to the <span>Terms of Service</span></h4>
+
+            <div class="buttons">
+              <button class="btn color-btn" onclick="closePopup()">Accept</button>
+            </div>
+
+          </div>
+        </div>
+
+        <script>
+          let popup=document.getElementById("popup");
+
+          function openPopup(){
+            popup.classList.add("open-popup");
+          }
+
+          function closePopup(){
+            popup.classList.remove("open-popup");
+          }
+        </script>
+
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Q&A</p>
+
+        <p class="footer-text">
+          Any question? Feel free to ask us.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="text" name="question" placeholder="Question" required class="input-field">
+
+          <button onclick="myFunction()" type="submit" class="submit-btn">Send</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - JavaScript
+  -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <script>
+    function sendEmail(){
+        Email.send({
+            SecureToken: "4f697db8-e5f7-4ad6-b748-053a63a8b7ea",
+            To : 'kristian1912@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Order Enquiry",
+            Body : "Name: " + document.getElementById("name").value 
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Company Name: " + document.getElementById("company_name").value
+            + "<br> Order Quantity: " + document.getElementById("order_quantity").value
+            + "<br> Materials: " + document.getElementById("materials").value
+            + "<br> Phone Number: " + document.getElementById("phone_Number").value
+            + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert("Form Sent Succesfully")
+        );
+    }
+  </script>
+  <script>
+    function myFunction() {
+      alert("Sent Sucessfully!");
+    }
+  </script>
+  
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

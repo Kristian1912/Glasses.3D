@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+    - Meta tags
+  -->
+  <title>CNC Projects</title>
+  <meta name="title" content="Glasses.3D">
+  <meta name="description" content=" Projects of Glasses.3D">
+  <meta name="author" content="Kristian Rendic">
+
+  <!-- 
+    - google font 
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 
+    - css link
+  -->
+  <link rel="stylesheet" href="./assets/css/cnc.css">
+  
+  
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/cnc/cnc-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/cnc/cnc.jpeg">
+  <link rel="preload" as="image" href="./assets/images/cnc/CNC-machined-parts-1-600x400.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/CNC-machined-parts-2-600x400.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/CNC-machined-parts-3-600x400.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/CNC-machined-parts-4-600x400.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/CNC-machined-parts-5-600x400.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/cnc.jpeg">
+  <link rel="preload" as="image" href="./assets/images/cnc/CNC-machined-parts-6-600x400.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/CNC-machined-parts-7-600x400.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/CNC-machined-parts-8-600x400.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/aluminum.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/brass.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/copper.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/stainless-steel.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/steel.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/ABS.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/Nylon.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/polycarbonate.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/POM.webp">
+  <link rel="preload" as="image" href="./assets/images/cnc/PTFE.webp">
+
+</head>
+<body>
+    <!-- 
+    - HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/index/logo-white.svg" width="200" height="24" alt="Glasses.3D" class="logo-light">
+
+        <img src="./assets/images/index/logo-black.svg" width="200" height="24" alt="Glasses.3D" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/index/logo-white.svg" width="200" height="24" alt="Glasses.3D">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="./about_us.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">CNC</a>
+          </li>
+
+          <li>
+            <a href="./projects.html" class="navbar-link">CAD Projects</a>
+          </li>
+
+          <li>
+            <a href="./contact.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+
+          <a href="./order.html" class="contact-link " id="order-btn">Order</a>
+          <br>
+
+          <a href="mailto:kristian1912@email.com" class="order-link">kristian1912@email.com</a>
+          <br>
+
+          <a href="tel:+381653021912" class="order-link">+381 65 302 1912</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/kristian-rendic/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/_zisti02_/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="./order.html" class="btn btn-primary">Order</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <!--
+        - HERO
+    -->
+
+    <section class="section-hero">
+        <h1>CNC Machining Services</h1>
+    </section>
+
+  <!-- MAIN -->
+
+  <main>
+    <article>
+
+        <!-- 
+            Image left, text right    
+        -->
+        <section class="section-main">
+            <div class="image-container">
+              <img src="./assets/images/cnc/cnc.jpeg" alt="Image">
+            </div>
+            <div class="text-container">
+              <p>Glasses.3D <b>CNC machining services</b> offer you precision CNC machined parts fabrication of plastic and metal in any volume. We specialize in multi-axis CNC milling center, CNC turning center, EDM, surface grinding, laser engraving, and much more. In addition, you're assured that all raw materials will meet your exact specifications because of our best-in-class testing and verification laboratory. That's one of many reasons why we are a preferred supplier to world-class companies for their most demanding CNC machining projects online.</p>
+            </div>
+        </section>
+
+        <!-- 
+            CNC Projects Section 
+        -->
+
+        <section class="section section-projects">
+
+            <h2>Latest CNC Machined Parts</h2>
+
+            <div class="line"></div>
+
+            <div class="paragraph">
+                <p>We produce high-quality CNC parts, which are used in aviation, automotive, marine engineering, medical, electronic equipment, and other fields.</p>
+            </div>
+           
+
+            <br>
+            <p>Looking for professional OEM CNC turning services or want to receive a high-quality part from a reputable and reliable supplier? Glasses.3D provides excellent quality CNC lathe services in the United States and Europe based on the requirements to customers, featuring precision machined parts, lathe parts. Our precision CNC Turning Parts applications exist in a variety of industries including automobile, electronics, medical and more. We mainly serve customers from the United States, Europe, the Middle East, and more countries & regions.</p>
+        </section>
+
+        <section>
+            <div class="image-section">
+                <div class="row">
+                  <img src="./assets/images/cnc/CNC-machined-parts-1-600x400.webp" alt="CNC Machine Part 1">
+                  <img src="./assets/images/cnc/CNC-machined-parts-2-600x400.webp" alt="CNC Machine Part 2">
+                  <img src="./assets/images/cnc/CNC-machined-parts-3-600x400.webp" alt="CNC Machine Part 3">
+                  <img src="./assets/images/cnc/CNC-machined-parts-4-600x400.webp" alt="CNC Machine Part 4">
+                </div>
+                <div class="row">
+                  <img src="./assets/images/cnc/CNC-machined-parts-5-600x400.webp" alt="CNC Machine Part 5">
+                  <img src="./assets/images/cnc/CNC-machined-parts-6-600x400.webp" alt="CNC Machine Part 6">
+                  <img src="./assets/images/cnc/CNC-machined-parts-7-600x400.webp" alt="CNC Machine Part 7">
+                  <img src="./assets/images/cnc/CNC-machined-parts-8-600x400.webp" alt="CNC Machine Part 8">
+                </div>
+              </div>
+        </section>
+
+        <!-- 
+            CURVE#1
+         -->
+
+        <section id="curve1">
+            <svg id="line1" data-name="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1464.08 140.44">
+            <path class="cls-1" d="M0,264.91s-10.51-98.34,296.49-105.26c62.12-1.4,180.7,14.77,264,33.33C987.72,288.16,973.68,368.42,1464,179.82V300H0" transform="translate(0.04 -159.56)"/>
+            </svg>
+        </section> 
+
+
+        <!--
+             FEATURES 
+        -->
+
+        <section class="section-features">
+
+            <h2>Features Of CNC Machining Services in Glasses.3D Inc.</h2>
+
+            <div class="line"></div>
+
+            <p class="paragraph">CNC machining services at <b>Glasses.3D</b> have many advantages for product development that can make it the ideal solution not only for rapid prototyping but also for volume production. <br> <span>Here is what you should consider:</span></p>
+
+            <section class="section-main_right">
+
+                <div class="text-container_right">                
+                    <ul>
+                        <li>Quick removal of large amounts of metal as well as engineering-grade plastic resins</li>
+                        <li>Highly accurate and repeatable</li>
+                        <li>Excellent for making complex geometries</li>
+                        <li>Versatile</li>
+                        <li>Suitable for many different kinds of substrates</li>
+                        <li>Scalable volumes from one to 100,000</li>
+                        <li>Low investment in tooling and preparation cost</li>
+                        <li>Fast turnaround</li>
+                        <li>Parts are full-strength and can be put into service immediately</li>
+                        <li>Excellent surface finishes</li>
+                        <li>Easily customized</li>
+                    </ul>
+                </div>
+
+                <div class="image-container_right">
+                  <img src="./assets/images/cnc/CNC-parts-1.jpg" alt="CNC manifactured parts">
+                </div>
+
+            </section>
+        </section>
+
+
+        <!-- 
+            MATERIALS
+         -->
+
+
+         <section class="section-materials">
+
+            <h2>Accepatble Materials for CNC Machining</h2>
+
+            <div class="line"></div>
+
+            <p class="paragraph">We work with a wide range of plastic and metal alloy materials including magnesium, mild and stainless steel, aluminum, brass, and titanium as well as rigid engineering grade plastic resins. These materials are part of our standard inventory and can be sourced for immediate availability from reliable vendors who have been thoroughly vetted and approved by us. In addition, we can also provide specialty materials such as super hard alloys - just talk with our engineers to learn how we can meet your needs.</p>
+            
+            <br>
+            <p>Looking for professional OEM CNC turning services or want to receive a high-quality part from a reputable and reliable supplier? Glasses.3D provides excellent quality CNC lathe services in the United States and Europe based on the requirements to customers, featuring precision machined parts, lathe parts. Our precision CNC Turning Parts applications exist in a variety of industries including automobile, electronics, medical and more. We mainly serve customers from the United States, Europe, the Middle East, and more countries & regions.</p>
+        </section>
+
+        <div class="image-materials-section">
+            <div class="row">
+              <div class="column">
+                <img src="./assets/images/cnc/aluminum.webp" alt="Aluminium">
+                <div class="caption">Aluminium</div>
+              </div>
+              <div class="column">
+                <img src="./assets/images/cnc/brass.webp" alt="Brass">
+                <div class="caption">Brass</div>
+              </div>
+              <div class="column">
+                <img src="./assets/images/cnc/copper.webp" alt="copper">
+                <div class="caption">Copper</div>
+              </div>
+              <div class="column">
+                <img src="./assets/images/cnc/stainless-steel.webp" alt="Stainless Steel">
+                <div class="caption">Stainless Steel</div>
+              </div>
+              <div class="column">
+                <img src="./assets/images/cnc/steel.webp" alt="Steel">
+                <div class="caption">Steel</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="./assets/images/cnc/ABS.webp" alt="ABS">
+                <div class="caption">ABS</div>
+              </div>
+              <div class="column">
+                <img src="./assets/images/cnc/Nylon.webp" alt="Nylon">
+                <div class="caption">Nylon</div>
+              </div>
+              <div class="column">
+                <img src="./assets/images/cnc/POM.webp" alt="POM">
+                <div class="caption">POM</div>
+              </div>
+              <div class="column">
+                <img src="./assets/images/cnc/polycarbonate.webp" alt="Polycarbonate">
+                <div class="caption">Polycarbonate</div>
+              </div>
+              <div class="column">
+                <img src="./assets/images/cnc/PTFE.webp" alt="PTFE">
+                <div class="caption">PTFE</div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 
+            CURVE#2
+         -->
+
+        <section id="curve2">
+            <svg id="line2" data-name="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1464.08 140.44">
+            <path class="cls-1" d="M0,264.91s-10.51-98.34,296.49-105.26c62.12-1.4,180.7,14.77,264,33.33C987.72,288.16,973.68,368.42,1464,179.82V300H0" transform="translate(0.04 -159.56)"/>
+            </svg>
+        </section> 
+          
+    </article>
+  </main>
+    
+ <!-- 
+    - FOOTER
+   -->
+
+   <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/index/logo-white.svg" width="100" height="24" alt="Glasses.3d">
+        </a>
+
+        <p class="footer-text">
+          &copy; 2023 Glasses.3D. <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.youtube.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/kristian-rendic/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/_zisti02_/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Kraljice Marije 16, Palilula-Belgrade 11000, Serbia
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:kristian1912@email.com" class="footer-link">kristian1912@email.com</a>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">+381 65 302 1912</a>
+        </li>
+
+        <br>
+
+        <li>
+          <p>Opening Time:</p>
+          <p>Mon-Fri: 9am to 18pm</p>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="./about_us.html" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">CNC</a>
+        </li>
+
+        <li>
+          <a href="./projects.html" class="footer-link">CAD Projects</a>
+        </li>
+
+        <li>
+          <a href="./contact.html" class="footer-link">Contact Us</a>
+        </li>
+
+        <div class="containerPopup">
+          <li>
+            <a href="#" class="footer-link" onclick="openPopup()">Terms of Service</a>
+          </li>
+
+          <!--
+            - Popup Terms of Service
+          -->
+
+          <div class="popup" id="popup">
+            <div class="terms-text">
+              <h2>Terms of Service</h2>
+
+              <p>Last Updated: 16.5.2023</p>
+              <br>
+
+              <p>Greetings Customers,</p>
+              <br>
+
+              <p> Please read these Terms of Service carefully before using services operated by <b>Glasses.3D</b>.</p>
+              <br>
+
+              <ol type="1">
+
+                <li>1. <b>Acceptance of Terms</b>
+                  <p>By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the Terms, you may not access the Service.</p>
+                </li>
+
+                <li>2. <b>Description of Service</b>
+                  <p>By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the Terms, you may not access the Service.</p>
+                </li>
+
+                <li>3. <b>User Accounts</b>
+                  <p>To access certain features of the Service, you may be required to create a user account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to provide accurate, current, and complete kristian1912rmation during the registration process. You must be at least [minimum age] years old to create an account.</p>
+                </li>
+
+                <li>4. <b>User Responsibilities</b>
+                  <p>You agree to use the Service in compliance with all applicable laws and regulations. You will not engage in any activity that interferes with or disrupts the Service or its servers. You are solely responsible for any content you post, transmit, or otherwise make available through the Service, and you agree not to upload, distribute, or otherwise publish any content that is unlawful, harmful, defamatory, obscene, or infringing on intellectual property rights.</p>
+                </li>
+
+                <li>5. <b>Intellectual Property</b>
+                  <p>The Service and its original content (excluding user-generated content) remain the property of <b>Glasses.3D</b> and are protected by intellectual property laws. You may not use, reproduce, modify, or distribute the content without our prior written consent.</p>
+                </li>
+
+                <li>6. <b>Privacy</b>
+                  <p>Your privacy is important to us. Our Privacy Policy explains how we collect, use, and disclose kristian1912rmation from users. By using the Service, you consent to the collection and use of your kristian1912rmation as described in our Privacy Policy.</p>
+                </li>
+
+                <li>7. <b>Third-Party Links</b>
+                  <p>The Service may contain links to third-party websites or services that are not owned or controlled by us. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that we shall not be liable for any damage or loss caused by your use of any third-party websites or services.</p>
+                </li>
+
+                <li>8. <b>Termination</b>
+                  <p>We may terminate or suspend your access to the Service without prior notice or liability for any reason, including, but not limited to, a breach of these Terms. All provisions of the Terms that by their nature should survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability, shall continue to apply.</p>
+                </li>
+
+                <li>9. <b>Disclaimer of Warranty</b>
+                  <p>The Service is provided on an "as-is" and "as available" basis, without any warranty, whether express, implied, or statutory. We do not warrant that the Service will be uninterrupted, timely, secure, or error-free, nor do we make any warranty regarding the quality, accuracy, or reliability of any content obtained through the Service.</p>
+                </li>
+
+                <li>10. <b>Limitation of Liability</b>
+                  <p>To the extent permitted by applicable law, in no event shall <b>Glasses.3D</b>, its directors, employees, partners, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including, without limitation, loss of profits, data, or goodwill, arising out of or in connection with your use of the Service.</p>
+                </li>
+
+                <li>11. <b>Governing Law and Jurisdiction</b>
+                  <p>These Terms shall be governed by and construed in accordance with the laws of [jurisdiction]. Any dispute
+                  arising out of or relating to these Terms or the Service shall be subject to the exclusive jurisdiction of the courts located in <b>Belgrade, Serbia</b>.</p>
+                </li>
+
+                <li>12. <b>Changes to Terms of Service</b>
+                  <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. The most current version of the Terms will be posted on the Service. By continuing to access or use the Service after any revisions become effective, you agree to be bound by the revised Terms.</p>
+                </li>
+
+                <li>13. <b>Contact Us</b>
+                  <p>If you have any questions about these Terms, please contact us at <a href="mailto:kristian1912@email.com" class="contact-link">kristian1912@email.com</a></p>
+                </li>
+
+              </ol>
+            </div>
+
+            <h4>I Agree to the <span>Terms of Service</span></h4>
+
+            <div class="buttons">
+              <button class="btn color-btn" onclick="closePopup()">Accept</button>
+            </div>
+
+          </div>
+        </div>
+
+        <script>
+          let popup=document.getElementById("popup");
+
+          function openPopup(){
+            popup.classList.add("open-popup");
+          }
+
+          function closePopup(){
+            popup.classList.remove("open-popup");
+          }
+        </script>
+
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Q&A</p>
+
+        <p class="footer-text">
+          Any question? Feel free to ask us.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="text" name="question" placeholder="Question" required class="input-field">
+
+          <button type="submit" onclick="myFunction()" class="submit-btn">Send</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - JavaScript
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script>
+    function myFunction() {
+      alert("Sent Sucessfully!");
+    }
+  </script>
+  
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

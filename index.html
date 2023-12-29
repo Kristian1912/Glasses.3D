@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - Meta tags
+  -->
+  <title>Glasses.3D</title>
+  <meta name="title" content="Glasses.3D">
+  <meta name="description" content="This is a private website of Glasses.3D">
+  <meta name="author" content="Kristian Rendic">
+  <!-- 
+    - google font 
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/index/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/index/hero-slide-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/index/hero-slide-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/index/hero-slide-3.jpg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/index/logo-white.svg" width="200" height="24" alt="Glasses.3D" class="logo-light">
+
+        <img src="./assets/images/index/logo-black.svg" width="200" height="24" alt="Glasses.3D" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/index/logo-white.svg" width="200" height="24" alt="Glasses.3D">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="./about_us.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="./cnc.html" class="navbar-link">CNC</a>
+          </li>
+
+          <li>
+            <a href="./projects.html" class="navbar-link">CAD Projects</a>
+          </li>
+
+          <li>
+            <a href="./contact.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+
+          <a href="./order.html" class="contact-link " id="order-btn">Order</a>
+          <br>
+
+          <a href="mailto:kristian1912@email.com" class="contact-link">kristian1912@email.com</a>
+          <br>
+
+          <a href="tel:+381653021912" class="contact-link">+381 65 302 1912</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/kristian-rendic/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/_zisti02_/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="./order.html" class="btn btn-primary">Order</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/index/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Bring your ideas to Life.</h1>
+
+            <p class="hero-text">
+              We're a creative company that focuses on establishing long-term relationships with customers.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="./cnc.html" class="btn btn-primary">CNC Machining</a>
+
+              <a href="./projects.html" class="btn btn-outline">3D Modeling</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/index/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/index/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/index/hero-slide-3.png" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">What We Do?</p>
+
+          <h2 class="h2 section-title">
+            The service we offer is specifically designed to meet your needs.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Trust and Efficiency</h3>
+
+                <p class="card-text">
+                  The company has passed a number of quality management system certifications, and has been committed to providing customers with efficient and high-quality products.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cube-outline"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">CAD Modeling</h3>
+
+                <p class="card-text">
+                  Our company excels in CAD modeling, employing skilled professionals to transform concepts into precise and detailed virtual representations.
+                </p>
+
+                <a href="./projects.html" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cog-outline"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">CNC Printing</h3>
+
+                <p class="card-text">
+                  With expertise, our company leverages cutting-edge technology to fabricate designs, delivering exceptional precision and quality.
+                </p>
+
+                <a href="./cnc.html" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="document-outline"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Technical Drawings</h3>
+
+                <p class="card-text">
+                  Specializing in technical drawings, our company translates complex ideas into clear and concise visual representations for seamless communication.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #WHY CHOOSE US
+      -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/index/cnc.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+
+            <h2 class="h2 section-title">
+              We bring solutions to make life easier for our clients.
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Professional Design</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    "Choose us for professional 3D modeling: unmatched expertise, exceptional quality, and personalized solutions that bring your visions to life."
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Factory Direct CNC Machining</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Our in-house facilities allow us to quickly complete your project. Since we have multiple CNC turning, milling and die-casting equipment. Low price and fast lead-time.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Precise, high tolerance</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    2D and 3D precision measuring instruments guarantee quality. ISO9001:2015 Certified.
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="./assets/images/index/3d_modeling-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">Our Strenghts</p>
+
+            <h2 class="h2 section-title">
+              Our Advantages in Custom Parts Manufacturing
+            </h2>
+
+            <p class="section-text">
+              Quality Assurance: We strictly implement ISO quality standards and have received ISO 9001: 2015 certification. This means our production lines feature advanced technologies that give manufacturing precision and accuracy. With sophisticated measuring and testing equipment in house, we check all incoming material and parts to meet your specifications.
+            </p>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Free Instant Quote within 24 Hours
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    3500+ Projects Delivered
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Parts Manufacturing Online
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Quality Assurance
+                  </span>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" aria-label="our stats">
+        <div class="container">
+
+          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/index/stats-bg.jpg')">
+
+            <li>
+              <p class="card-text">
+                <span class="h1">3500+</span>
+
+                <spna class="span">Completed Projects</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">1200</span>
+
+                <spna class="span">Happy Customers</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">50</span>
+
+                <spna class="span">Expert Employees</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">2022</span>
+
+                <spna class="span">Starting Year</spna>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="project-label">Case Studies</p>
+
+          <h3 class="h3">
+            Check out some of our projects with creative ideas and great design.
+          </h3>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/index/telefon.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="./cnc.html" class="card-title">CNC Printing</a>
+                  </h3>
+
+                  <p class="card-text">
+                    We are well-versed in CNC printing techniques, ensuring that your parts or prototypes are fabricated to your exact specifications. 
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-04-14">16 May 2023</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">CNC printed door frame</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/index/Laptop_otvoren.png" width="560" height="350" loading="lazy"
+                    alt="Nullam id dolor elit id nibh" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="./projects.html" class="card-title">3D modeling</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Our expert team utilizes SolidWorks and CATIA, renowned software for creating intricate and precise models.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-03-29">16 May 2023</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Sowa M15 Model</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;" id="technical_drawing">
+                  <img src="./assets/images/index/Tehnicki_Crtez.PNG" width="560" height="350" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Technical Drawings</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Whether you require engineering blueprints or product specifications, we have the expertise to deliver exceptional results.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">16 May 2023</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Technical Drawing for Yugo</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/index/logo-white.svg" width="100" height="24" alt="Glasses.3d">
+        </a>
+
+        <p class="footer-text">
+          &copy; 2023 Glasses.3D. <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/kristian-rendic/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/_zisti02_/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/" class="social-link" target="_blank">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Kraljice Marije 16, Palilula-Belgrade 11000, Serbia
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:kristian1912@email.com" class="footer-link">kristian1912@email.com</a>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">+381 65 302 1912</a>
+        </li>
+
+        <br>
+
+        <li>
+          <p>Opening Time:</p>
+          <p>Mon-Fri: 9am to 18pm</p>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="./about_us.html" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="./cnc.html" class="footer-link">CNC</a>
+        </li>
+
+        <li>
+          <a href="./projects.html" class="footer-link">CAD Projects</a>
+        </li>
+
+        <li>
+          <a href="./contact.html" class="footer-link">Contact Us</a>
+        </li>
+
+        <div class="containerPopup">
+          <li>
+            <a href="#" class="footer-link" onclick="openPopup()">Terms of Service</a>
+          </li>
+
+          <!--
+            - Popup Terms of Service
+          -->
+
+          <div class="popup" id="popup">
+            <div class="terms-text">
+              <h2>Terms of Service</h2>
+
+              <p>Last Updated: 16.5.2023</p>
+              <br>
+
+              <p>Greetings Customers,</p>
+              <br>
+
+              <p> Please read these Terms of Service carefully before using services operated by <b>Glasses.3D</b>.</p>
+              <br>
+
+              <ol type="1">
+
+                <li>1. <b>Acceptance of Terms</b>
+                  <p>By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the Terms, you may not access the Service.</p>
+                </li>
+
+                <li>2. <b>Description of Service</b>
+                  <p>By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the Terms, you may not access the Service.</p>
+                </li>
+
+                <li>3. <b>User Accounts</b>
+                  <p>To access certain features of the Service, you may be required to create a user account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to provide accurate, current, and complete kristian1912rmation during the registration process. You must be at least [minimum age] years old to create an account.</p>
+                </li>
+
+                <li>4. <b>User Responsibilities</b>
+                  <p>You agree to use the Service in compliance with all applicable laws and regulations. You will not engage in any activity that interferes with or disrupts the Service or its servers. You are solely responsible for any content you post, transmit, or otherwise make available through the Service, and you agree not to upload, distribute, or otherwise publish any content that is unlawful, harmful, defamatory, obscene, or infringing on intellectual property rights.</p>
+                </li>
+
+                <li>5. <b>Intellectual Property</b>
+                  <p>The Service and its original content (excluding user-generated content) remain the property of <b>Glasses.3D</b> and are protected by intellectual property laws. You may not use, reproduce, modify, or distribute the content without our prior written consent.</p>
+                </li>
+
+                <li>6. <b>Privacy</b>
+                  <p>Your privacy is important to us. Our Privacy Policy explains how we collect, use, and disclose kristian1912rmation from users. By using the Service, you consent to the collection and use of your kristian1912rmation as described in our Privacy Policy.</p>
+                </li>
+
+                <li>7. <b>Third-Party Links</b>
+                  <p>The Service may contain links to third-party websites or services that are not owned or controlled by us. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that we shall not be liable for any damage or loss caused by your use of any third-party websites or services.</p>
+                </li>
+
+                <li>8. <b>Termination</b>
+                  <p>We may terminate or suspend your access to the Service without prior notice or liability for any reason, including, but not limited to, a breach of these Terms. All provisions of the Terms that by their nature should survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability, shall continue to apply.</p>
+                </li>
+
+                <li>9. <b>Disclaimer of Warranty</b>
+                  <p>The Service is provided on an "as-is" and "as available" basis, without any warranty, whether express, implied, or statutory. We do not warrant that the Service will be uninterrupted, timely, secure, or error-free, nor do we make any warranty regarding the quality, accuracy, or reliability of any content obtained through the Service.</p>
+                </li>
+
+                <li>10. <b>Limitation of Liability</b>
+                  <p>To the extent permitted by applicable law, in no event shall <b>Glasses.3D</b>, its directors, employees, partners, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including, without limitation, loss of profits, data, or goodwill, arising out of or in connection with your use of the Service.</p>
+                </li>
+
+                <li>11. <b>Governing Law and Jurisdiction</b>
+                  <p>These Terms shall be governed by and construed in accordance with the laws of [jurisdiction]. Any dispute
+                  arising out of or relating to these Terms or the Service shall be subject to the exclusive jurisdiction of the courts located in <b>Belgrade, Serbia</b>.</p>
+                </li>
+
+                <li>12. <b>Changes to Terms of Service</b>
+                  <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. The most current version of the Terms will be posted on the Service. By continuing to access or use the Service after any revisions become effective, you agree to be bound by the revised Terms.</p>
+                </li>
+
+                <li>13. <b>Contact Us</b>
+                  <p>If you have any questions about these Terms, please contact us at <a href="mailto:kristian1912@email.com" class="contact-link">kristian1912@email.com</a></p>
+                </li>
+
+              </ol>
+            </div>
+
+            <h4>I Agree to the <span>Terms of Service</span></h4>
+
+            <div class="buttons">
+              <button class="btn color-btn" onclick="closePopup()">Accept</button>
+            </div>
+
+          </div>
+        </div>
+
+        <script>
+          let popup=document.getElementById("popup");
+
+          function openPopup(){
+            popup.classList.add("open-popup");
+          }
+
+          function closePopup(){
+            popup.classList.remove("open-popup");
+          }
+        </script>
+
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Q&A</p>
+
+        <p class="footer-text">
+          Any question? Feel free to ask us.
+        </p>
+
+        <form  class="input-wrapper">
+          <input type="text" name="question" placeholder="Question" required class="input-field">
+
+          <button onclick="myFunction()" type="submit" class="submit-btn">Send</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - JavaScript
+  -->
+  
+  <script src="./assets/js/script.js"></script>
+  <script>
+    function myFunction() {
+      alert("Sent Sucessfully!");
+    }
+  </script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
